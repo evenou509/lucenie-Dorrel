@@ -1,0 +1,15 @@
+/*==========================================
+    Gallery
+==========================================*/
+.gallery {
+    padding: 116px 0 130px;
+    background: $white;
+    .gallery-slider {
+        .single-img {
+            border: 20px solid #f8f8f9;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,138 @@
+/*==========================================
+    banner
+==========================================*/
+.banner, .banner-1, .banner-2, .banner-3 {
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    iframe#mbYTP_bgndVideo {
+        transform: scale(1.4);
+    }
+    .buttonBar{
+        display: none;
+    }
+    &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        filter: blur(1px);
+        z-index: -1;
+    }
+    .overlay {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        opacity: .5;
+        z-index: 5;
+    }
+    .banner-content {
+        padding: 280px 0;
+        text-align: center;
+        position: relative;
+        z-index: 6;
+        h1 {
+            font-size: 170px;
+            color: $white;
+            margin-top: -31px;
+            margin-bottom: 45px;
+        }
+        .married-time {
+            background: rgba(255, 255, 255, 0.20);
+            display: inline-block;
+            padding: 22px 95px 7px 45px;
+            position: relative;
+            &:after {
+                position: absolute;
+                content: '';
+                right: 0;
+                top: 0;
+                height: 100%;
+                width: 50px;
+                background: $base-color;
+            }
+            h4 {
+                color: $white;
+                font-size: 40px;
+                margin-bottom: 5px;
+            }
+            p {
+                color: $white;
+                font-size: 16px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+            .party-owner {
+                color: $white;
+                position: absolute;
+                font-size: 15px;
+                font-weight: 600;
+                right: -11px;
+                top: 50%;
+                z-index: 1;
+                height: 24px;
+                margin-top: -12px;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}
+.banner-1 {
+    background: url('../img/banner-2.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        filter: blur(1px);
+        z-index: -1;
+        background: #000;
+        opacity: .6;
+    }
+}
+.banner-2 {
+    background: url('../img/banner.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        filter: blur(1px);
+        z-index: -1;
+        background: #000;
+        opacity: .6;
+    }
+}
+.banner-3 {
+    background: url('../img/banner-3.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        filter: blur(1px);
+        z-index: -1;
+        background: #000;
+        opacity: .6;
+    }
+}

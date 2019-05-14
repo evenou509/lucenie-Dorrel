@@ -1,0 +1,53 @@
+/*==========================================
+    Countdown
+==========================================*/
+.countdown {
+    padding: 115px 0 125px;
+    text-align: center;
+    .part-text {
+        margin-bottom: 28px;
+        h2 {
+            font-size: 72px;
+            color: $heading-color;
+            margin-bottom: 23px;
+            span {
+                color: $heading-color-2;
+            }
+        }
+        p {
+            color: $descr-color;
+            font-weight: 500;
+            margin-bottom: 22px;
+        }
+        span.date {
+            color: $descr-color;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    }
+    .part-countdown {
+        .timer {
+            .single-count {
+                display: inline-block;
+                margin-right: 43px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                .day, .hour, .minute, .second {
+                    font-size: 60px;
+                    color: $heading-color;
+                    display: block;
+                    font-family: $heading-font;
+                    margin-bottom: -21px;
+                }
+                .title {
+                    font-size: 16px;
+                    color: $base-color;
+                    font-family: $body-font;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

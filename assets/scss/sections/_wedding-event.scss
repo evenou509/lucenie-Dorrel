@@ -1,0 +1,49 @@
+/*==========================================
+    Wedding event
+==========================================*/
+.wedding-event {
+    padding: 123px 0 130px;
+    background: #f8f8f9;
+    .single-event {
+        background: #f8f8f9;
+        border: 15px solid $white;
+        text-align: center;
+        padding: 42px 50px 27px;
+        &.special {
+            border-color: #f8f8f9; 
+        }
+        h3 {
+            font-size: 40px;
+            color: $heading-color;
+            margin-bottom: 11px;
+        }
+        span {
+            &.time {
+                font-size: 24px;
+                color: $heading-color-2;
+                font-family: $heading-font;
+                display: block;
+                margin-bottom: 24px;
+                position: relative;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    height: 1px; 
+                    background: $heading-color-2;;
+                    width: 100%;
+                    bottom: -9px;
+                }
+            }
+            &.date-place {
+                color: $descr-color;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+        p {
+            color: $descr-color;
+            margin-top: 23px;
+        }
+    }
+}
